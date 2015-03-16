@@ -5,7 +5,7 @@ Simple plugin to get any SSDP / UPnP / DLNA service on a local network
 ## Using
 Clone the plugin
 
-    $ git clone https://.git
+    $ git clone https://github.com/scottdermott/cordova-plugin-discovery.git
 
 Create a new Cordova Project
 
