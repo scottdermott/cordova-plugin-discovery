@@ -32,7 +32,7 @@ Edit `www/js/index.js` and add the following code inside `onDeviceReady`
         alert("Error calling Service Discovery Plugin");
     }
 
-    serviceDiscovery.getNetworkServices(serviceTypes, true, success, failure);
+    serviceDiscovery.getNetworkServices("ssdp:all", true, success, failure);
 ```
 
 
