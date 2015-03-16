@@ -24,15 +24,25 @@ Install the plugin
 Edit `www/js/index.js` and add the following code inside `onDeviceReady`
 
 ```js
+    var serviceType = "ssdp:all";
+    
     var success = function(devices) {
         console.log(devices);
     }
-
+    
     var failure = function() {
         alert("Error calling Service Discovery Plugin");
     }
-
-    serviceDiscovery.getNetworkServices("ssdp:all", true, success, failure);
+    
+    /**
+	 * Similar to the W3C specification for Network Service Discovery api 'http://www.w3.org/TR/discovery-api/'
+	 * @method getNetworkServices
+	 * @param {String} serviceType e.g. "urn:schemas-upnp-org:service:ContentDirectory:1", "ssdp:all", "urn:schemas-upnp-org:service:AVTransport:1"
+	 * @param {Boolean} callback executes upon completion
+	 * @param {Function} success callback an array of services
+	 * @param {Function} failure callback 
+	*/
+    serviceDiscovery.getNetworkServices(serviceType, true, success, failure);
 ```
 
 
