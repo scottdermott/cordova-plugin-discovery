@@ -93,7 +93,6 @@ public class SimpleSD extends CordovaPlugin {
         discoveryMessage.append("HOST: " + SSDP_IP + ":" + SSDP_PORT + "\r\n");
         
         discoveryMessage.append("ST:"+service+"\r\n");
-        //discoveryMessage.append("ST:"+SERVICE_NAGRA_REMOTE_CONTROL+"\r\n");
         //discoveryMessage.append("ST:ssdp:all\r\n");
         discoveryMessage.append("MAN: \"ssdp:discover\"\r\n");
         discoveryMessage.append("MX: 2\r\n");
