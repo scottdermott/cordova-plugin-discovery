@@ -18,7 +18,7 @@ Add Android platform
 Install the plugin
 
     $ cd myApp
-    $ cordova plugin install ../cordova-plugin-discovery
+    $ cordova plugin add ../cordova-plugin-discovery
     
 
 Edit `www/js/index.js` and add the following code inside `onDeviceReady`
