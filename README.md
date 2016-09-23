@@ -1,4 +1,4 @@
-# Cordova Android Service Discovery
+# Cordova Service Discovery
 
 Simple plugin to get any SSDP / UPnP / DLNA service on a local network
 
@@ -49,4 +49,8 @@ Edit `www/js/index.js` and add the following code inside `onDeviceReady`
 Run the code
 
     cordova run android
+
+## Supported Platforms
+- Android
+- iOS
 
