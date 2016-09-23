@@ -131,10 +131,10 @@ public class SimpleSD extends CordovaPlugin {
                     String message = new String(receivePacket.getData());   
                     try {
                         JSONObject device = new JSONObject();
-                        device.put("id", parseHeaderValue(message, "USN"));
-                        device.put("serviceURL", parseHeaderValue(message, "LOCATION"));
-                        device.put("type", parseHeaderValue(message, "ST"));
-                        device.put("server", parseHeaderValue(message, "Server"));
+                        device.put("USN", parseHeaderValue(message, "USN"));
+                        device.put("LOCATION", parseHeaderValue(message, "LOCATION"));
+                        device.put("ST", parseHeaderValue(message, "ST"));
+                        device.put("Server", parseHeaderValue(message, "Server"));
                         //device.put("xml", getResponseFromUrl(parseHeaderValue(message, "LOCATION")));
                         deviceList.put(device);
                     } catch (JSONException e) {
