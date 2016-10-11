@@ -2,14 +2,14 @@
  function httpGet(url) {
     var xmlHttp = null;
     xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url, false );
-    xmlHttp.send( null );
+    xmlHttp.open("GET",url,false);
+    xmlHttp.send(null);
     return xmlHttp.responseText;
 }
 function getConfig(devices, callback){ 
     for (var i = 0; i < devices.length; i++) {
-        devices[i].config = httpGet(devices[i].serviceURL);
-        devices[i].url = "http://"+devices[i].serviceURL.split("/")[2];
+        devices[i].config = httpGet(devices[i].LOCATION);
+        devices[i].url = "http://"+devices[i].LOCATION.split("/")[2];
     }
     callback(devices);
 }
