@@ -14,6 +14,7 @@ Create a new Cordova Project
 Add Android platform
 
     cordova platform add android
+    cordova platform add ios
     
 Install the plugin
 
@@ -49,8 +50,8 @@ Edit `www/js/index.js` and add the following code inside `onDeviceReady`
 Run the code
 
     cordova run android
+    cordova run ios
 
 ## Supported Platforms
 - Android
 - iOS
-
