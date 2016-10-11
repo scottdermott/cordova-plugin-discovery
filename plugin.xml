@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="com.scott.serviceDiscovery"
-        version="0.1.0">
+        version="0.2.0">
 
   <name>serviceDiscovery</name>
 
@@ -26,7 +26,9 @@
     </config-file>
 
     <source-file src="src/android/serviceDiscovery.java" target-dir="src/com/scott/plugin/"/>
-    <source-file src="src/android/SimpleSD.java" target-dir="src/com/scott/plugin/"/>
+    <source-file src="src/android/cordovaSSDP.java" target-dir="src/com/scott/plugin/"/>
+    <!-- Requires 3rd party HTTP lib -->
+    <framework src="com.loopj.android:android-async-http:1.4.9" />
   </platform>
 
   <!-- ios -->
