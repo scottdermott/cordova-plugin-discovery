@@ -1,6 +1,6 @@
 /*global cordova, module*/
 module.exports = {
-    getNetworkServices: function (service, addConfigXML, successCallback, errorCallback) {
+    getNetworkServices: function (service, successCallback, errorCallback) {
     	var processResponse = function (data) {
 	    	successCallback(data);
     	};
