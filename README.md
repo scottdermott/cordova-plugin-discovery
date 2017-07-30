@@ -10,6 +10,7 @@ Clone the plugin
 Create a new Cordova Project
 
     $ cordova create myApp com.example.myApp MyApp
+    $ cd myApp
 
 Add Android platform
 
@@ -18,7 +19,6 @@ Add Android platform
     
 Install the plugin
 
-    $ cd myApp
     $ cordova plugin add ../cordova-plugin-discovery
     
 
